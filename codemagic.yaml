@@ -59,10 +59,10 @@ workflows:
         APP_ID: 1630136022 # <-- Use the TestFlight Apple id number (An automatically generated ID assigned to your app) found under General > App Information > Apple ID.
       xcode: latest
     scripts:
-      - name: Cocoapods installation
-        script: |
-          cd $CM_BUILD_DIR/iosApp
-          pod install
+      # - name: Cocoapods installation
+      #   script: |
+      #     cd $CM_BUILD_DIR/iosApp
+      #     pod install
       - name: Set up code signing settings on Xcode project
         script: |
           cd $CM_BUILD_DIR/iosApp
